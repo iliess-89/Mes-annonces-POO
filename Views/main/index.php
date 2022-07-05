@@ -1,1 +1,1 @@
-<p>Page d'accueil des annonces</p>
+<h1>Page Acceueil du site</h1>

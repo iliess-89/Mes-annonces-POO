@@ -4,8 +4,10 @@ namespace App\Controllers;
 class MainController extends Controller
 {
 
+
     public function index()
     {
-        echo "Ceci est la page d'Acceuil";
+        $this->template = 'home';
+        $this->render('main/index', [], 'home');
     }
-}
+ }
