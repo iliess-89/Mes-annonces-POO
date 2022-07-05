@@ -1,5 +1,5 @@
 <?php
-namespace App\Db;
+namespace App\Core;
 
 // On "importe" PDO
 use PDO;
