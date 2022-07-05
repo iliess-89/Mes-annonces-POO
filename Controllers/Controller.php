@@ -4,9 +4,7 @@ namespace App\Controllers;
 class Controller 
 {
 
-    protected $template = 'default';
-
-    public function render(string $fichier, $donnees = [])
+    public function render(string $fichier, $donnees = [], string $template = 'default')
     {
         //on extrait le contenu des donnees
         extract($donnees);
@@ -22,7 +20,7 @@ class Controller
         $contenu = ob_get_clean();
 
         // template de page 
-        require_once ROOT.'/Views/'.$this->template.'.php';
+        require_once ROOT.'/Views/'.$template.'.php';
     }
     
 }
