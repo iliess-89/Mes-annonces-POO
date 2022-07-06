@@ -96,4 +96,5 @@ class UsersModel extends Model
 
         return $this;
     }
+
 }
