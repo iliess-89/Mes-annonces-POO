@@ -27,6 +27,7 @@ class UsersController extends Controller
             }
 
             //l'utilisateur existe
+            /* @var $user UsersModel */
             $user = $userModel->hydrate($userArray);
 
             //on vérifie si le mot de passe est correcte
